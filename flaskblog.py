@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-app = Flask(__name__)
+from flask import Flask, render_template, url_for # render_template is used for rendering other pages/ templates 
+app = Flask(__name__)                             # url_for is for detecting main.css file
 
 posts = [
     {
@@ -13,6 +13,12 @@ posts = [
         'title': 'Blog Post 2',
         'content': 'Second post Content',
         'date_posted': 'April 21, 2019'
+    },
+    {
+        'author': 'Sama Biswas',
+        'title': 'Blog Post 3',
+        'content': 'Third post Content',
+        'date_posted': 'April 22, 2019'
     }
 ]
 
